@@ -22,5 +22,6 @@ function createTable(data) {
 
         row.append(nameCell, descriptionCell, locationCell);
         table.append(row);
+        
     }
 }

@@ -1,33 +1,45 @@
 html{
-    background:linear-gradient(transparent,gray, white), url(img/seal.jpg);
-    background-repeat: no-repeat;
-    background-position:center center;;
-    min-width: fit-content;
+    background:linear-gradient(orange, yellow, cyan);
+    display: flex;
+    width: 100%;
     align-items: center;
+    position: center;
 }
-/* .layered-image{
-    background-image: linear-gradient(gray, white), url(img/seal.jpg);
-     */
+#seal {
+    width:10%;
+    padding-right: 1500px;
 }
-::-webkit-input-placeholder{
-    color: aliceblue;
-}
-table, th, td {
+#words{
+    width: 10%;
+ }
+
+
+
+table, th,{
     border: 1px solid black;
-    text-decoration-color: blue;
+    
   }
 
-body {
+  td{
+    border: 1px solid black;
+    font-size: x-large;
+  }
+  
+  h1 {
+      color:rgb(26, 186, 127);
+      
+  }
+
+  h2{
+      color:rgb(26, 186, 127);
+      top: -100px;
+  }
+
+  body {
+    color:black;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 20px;
     text-align: center;
-    
+    position: center;
 }
 
-h1 {
-    color: yellowgreen;
-    position: top center;
-}
-h2{
-    color:lightseagreen;
-}
