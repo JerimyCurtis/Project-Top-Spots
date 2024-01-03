@@ -1,30 +1,26 @@
-$(document).ready(function() {
-    $.getJSON('data.json', function(data) {
-        createHTML(data);
-    })
-    .fail(function(error) {
-        console.error('Error reading JSON file:', error);
-    });
-
-    function createHTML(data) {
-        var container = $('#dynamic-content');
-        var table = $('<table>');
-        var headerRow = $('<tr>');
-        headerRow.append($('<th>').text('Name'));
-        headerRow.append($('<th>').text('Description'));
-        headerRow.append($('<th>').text('Location'));
-        
-        table.append(headerRow);
-
-        $.each(data, function(index, item) {
-            var row = $('<tr>');
-            row.append($('<td>').text(item.name));
-            row.append($('<td>').text(item.description));
-            row.append($('<td>').text('Latitude: ' + item.location[0] + ', Longitude: ' + item.location[1]));
-
-            table.append(row);
-        });
-
-        container.append(table);
-    }
+$.getJSON('data.json', function (data) {
+    createTable(data);
+})
+.fail(function (error) {
+    console.error('Error reading JSON file:', error);
 });
+
+// Function to create links and populate the table
+function createTable(data) {
+    var table = $('#topSpotsTable tbody');
+
+    for (var i = 0; i < data.length; i++) {
+        var row = $('<tr>');
+
+        // Populate cells
+        var nameCell = $('<td>').text(data[i].name);
+        var descriptionCell = $('<td>').text(data[i].description);
+
+        // Creating a link to Google Maps using latitude and longitude
+        var locationLink = $('<a>').attr('href', 'https://www.google.com/maps?q=' + data[i].location[0] + ',' + data[i].location[1]).text('View on Map');
+        var locationCell = $('<td>').append(locationLink);
+
+        row.append(nameCell, descriptionCell, locationCell);
+        table.append(row);
+    }
+}

@@ -1,59 +1,33 @@
 html{
-    background-color: #939e93;
-    position:relative;
+    background:linear-gradient(transparent,gray, white), url(img/seal.jpg);
+    background-repeat: no-repeat;
+    background-position:center center;;
     min-width: fit-content;
     align-items: center;
+}
+/* .layered-image{
+    background-image: linear-gradient(gray, white), url(img/seal.jpg);
+     */
 }
 ::-webkit-input-placeholder{
     color: aliceblue;
 }
 table, th, td {
     border: 1px solid black;
+    text-decoration-color: blue;
   }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 20px;
     text-align: center;
+    
 }
 
 h1 {
-    color: #392e2e;
+    color: yellowgreen;
     position: top center;
 }
-
-input {
-    color:azure;
-    font-size: large;
-    background-color: #5b835b;
-    padding: 10px;
-    margin: 5px;
-    }
-#placeholder{
-    color:aliceblue;
-}
-
-#twnty-dollars-output {
-    font-size:x-large;
-    background-image: url(img/twn.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position:calc(55%);
-    padding-right: 50px;
-}
-
-button {
-    padding: 10px;
-    background-image: url(img/reg.jpg);
-    background-color:#5b835b ;
-    background-size: contain;
-    width: 150px;
-    height: 200px;;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color:#939e93;
+h2{
+    color:lightseagreen;
 }
