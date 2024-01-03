@@ -7,10 +7,9 @@ html{
 ::-webkit-input-placeholder{
     color: aliceblue;
 }
-/* table{
-    border-width: thin;
-    border-color:darkgreen;
-} */
+table, th, td {
+    border: 1px solid black;
+  }
 
 body {
     font-family: Arial, sans-serif;
