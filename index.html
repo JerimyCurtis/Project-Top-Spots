@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <title>San Diego Top Spots</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="main.js"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<img id="seal" src="img/2seal.png"><br>
-<h1>San Diego Top Spots</h1>
-        <br>
+    <head>
+        <meta charset="UTF-8">
+        <title>San Diego Top Spots</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="main.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <form id="form" role="search">
+        <input type="search" id="query" name="q" placeholder="Search..." aria-label="Search page">
+        <button>Search</button>
+      </form>
+    <img id="seal" src="img/2seal.png"><br>
+    <h1>San Diego Top Spots</h1>
+    <br>
     <img id="words" src="img/words.png">
-<!-- <h2>Top Spots</h2> -->
-
+    <h2>America's Finest City!</h2>
+    
+    <iframe id='map' src="https://www.google.com/maps/d/u/0/embed?mid=1SGAKTJtr2ixHgYuRjqElEPkfhXn7Z8s&ehbc=2E312F" width="640" height="480"></iframe>
 
 <body>
 
