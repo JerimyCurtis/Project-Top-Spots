@@ -27,7 +27,7 @@ function createTable(data) {
     const f = document.getElementById('form');
 const q = document.getElementById('query');
 const google = 'https://www.google.com/search?q=site%3A+';
-const site = 'http://127.0.0.1:5500/';
+const site = 'https://www.sandiego.gov/';
 
 function submitted(event) {
   event.preventDefault();
