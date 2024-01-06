@@ -5,12 +5,14 @@ html{
     margin: 0 auto;    
 #map {
     width: 40%;
-    position:relative;
-    top:-500px;
-    right:-55%;
+    position:absolute;
+    top:110px;
+    right:0px;
 }
 form{
-    position: relative;
+    position: absolute;
+    top: 90px;
+    right: -798px;
     width:71vw;
 }
 #seal {
@@ -24,26 +26,23 @@ form{
     position:relative;
     width:10%;
  }
-tr:hover{
+ tr:hover{
     background-color:rgb(26, 186, 127);
 }
 
-table,th,tr, td{
+table,th,tr{
     border: solid black;
-    font-size: x-large;
-    position: relative;
-    top:-100px;
 }
 
   td{
     border: 1px solid black;
-    
-  }
+    font-size: x-large;
+  };
   
   h1 {
       color:rgb(26, 186, 127);
       position: relative;
-      right:-38%;
+      left: 500px;
       top:-50;
   }
 
@@ -51,12 +50,15 @@ table,th,tr, td{
       color:rgb(26, 186, 127);
       font-size: xx-large;
       position: relative;
-      
+      left:500px;
   }
 
   body {
     color:black;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    width: 100%;
+    
   }
 
  
