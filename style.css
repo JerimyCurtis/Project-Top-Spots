@@ -1,4 +1,4 @@
-html{
+/* html{
     background:linear-gradient(orange, yellow,rgb(87, 163, 229), cyan);
     width: 100%;
     position: relative;
@@ -61,4 +61,78 @@ table,th,tr{
     
   }
 
- 
+  */
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(orange, yellow, rgb(87, 163, 229), cyan);
+    
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-gap: 5px;
+    padding: 5px;
+  }
+  #words{
+    width:100%;
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 7;
+  }
+  #seal {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+  
+  h1{
+    color:rgb(10, 115, 77);
+    width: 100%;
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 3;
+  }
+  h2 {
+    color:rgb(10, 115, 77);
+    width: 100%;
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    font-size: xx-large;
+
+  }
+  
+  #map {
+    grid-column-start:9;
+    grid-column-end: 14;
+    grid-row-start: 1;
+    grid-row-end: 8;
+  }
+  
+  form {
+    grid-column: span 3;
+  }
+  
+  #topSpotsTable {
+    margin: 20px;
+    grid-column: span 13;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  tr:hover {
+    background-color: rgb(26, 186, 127);
+  }
+  
