@@ -1,6 +1,8 @@
+//Get data from json and send to function createTable when called
 $.getJSON('data.json', function (data) {
     createTable(data);
 })
+//Create error message for failed json retreival
 .fail(function (error) {
     console.error('Error reading JSON file:', error);
 });
@@ -16,7 +18,7 @@ function createTable(data) {
         var nameCell = $('<td>').text(data[i].name);
         var descriptionCell = $('<td>').text(data[i].description);
 
-        // Creating a link to Google Maps using latitude and longitude
+        // Create a link to Google Maps using latitude and longitude
         var locationLink = $('<a>').attr('href', 'https://www.google.com/maps?q=' + data[i].location[0] + ',' + data[i].location[1]).text('View on Map');
         var locationCell = $('<td>').append(locationLink);
 
@@ -24,6 +26,7 @@ function createTable(data) {
         table.append(row);
     } 
     }
+    //Create a page search function
     const f = document.getElementById('form');
 const q = document.getElementById('query');
 const google = 'https://www.google.com/search?q=site%3A+';
